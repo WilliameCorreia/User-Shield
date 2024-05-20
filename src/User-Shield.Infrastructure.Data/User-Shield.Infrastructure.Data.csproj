@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Folder Include="EntityFramework\EntitiesConfiguration\" />
+    <Folder Include="EntityFramework\EntitiesConfiguration\" />
   </ItemGroup>
 
   <ItemGroup>

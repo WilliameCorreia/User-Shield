@@ -2,12 +2,12 @@
 
 namespace User_Shield.Domain.Interfaces.Repositories
 {
-    public interface IUsuarioRepository
+    public interface IUsuarioRepository : IBaseRepository<Usuario>
     {
-        Task<Usuario> GetByIdAsync(int id);
-        Task<IEnumerable<Usuario>> GetAllAsync();
-        Task AddAsync(Usuario product);
-        Task UpdateAsync(Usuario product);
-        Task DeleteAsync(int id);
+        #region Public Methods
+
+        Task<bool> VerificarDuplicidadeAsync(Guid id, string nome, string email);
+
+        #endregion Public Methods
     }
 }
